@@ -89,4 +89,12 @@
   .header-container {
     @apply mx-auto max-w-7xl px-2 sm:px-6 lg:px-8;
   }
+
+  .footer-container {
+    @apply mx-auto max-w-7xl px-2 sm:px-6 lg:px-8;
+  }
+
+  .btn-subs {
+    @apply py-1.5 px-4 bg-black hover:bg-black/90 transform duration-200 transition-all text-white rounded-md text-nowrap;
+  }
 }
