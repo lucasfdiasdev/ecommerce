@@ -70,6 +70,9 @@
   * {
     @apply border-border m-0 p-0 box-border;
   }
+  html {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -96,5 +99,11 @@
 
   .btn-subs {
     @apply py-1.5 px-4 bg-black hover:bg-black/90 transform duration-200 transition-all text-white rounded-md text-nowrap;
+  }
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }

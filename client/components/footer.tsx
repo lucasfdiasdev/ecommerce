@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-200">
       <div className="footer-container">
-        <div className="flex items-start justify-between border-b py-4">
+        <div className="flex-col md:flex-row flex items-start justify-between border-b py-4">
           <div className="flex flex-row gap-12">
             <div className="flex flex-col gap-2">
               <h4 className="font-bold">Categorias</h4>
