@@ -9,13 +9,15 @@ import {
 } from "@/components/ui/carousel";
 import CollectionItem from "./_components/collection-item";
 
-const SectionCollectionFeatured = () => {
+const SectionCollectionsBestSellers = () => {
   const featuredRoutes = [
     {
       label:
         "Notebook Acer (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Prateado",
       href: "/",
       price: 899,
+      badgeDiscount: "-33%",
+      priceOffset: 799,
       category: "Notebook",
       hrefCategory: "/category",
       src: "/category1.png",
@@ -34,6 +36,8 @@ const SectionCollectionFeatured = () => {
       price: 899,
       href: "/",
       category: "Smarts",
+      badgeDiscount: "-33%",
+      priceOffset: 799,
       hrefCategory: "/category",
       src: "/category2.png",
     },
@@ -60,7 +64,7 @@ const SectionCollectionFeatured = () => {
       <div className="row gap-4 py-5">
         <div className="flex flex-col">
           <div className="flex-between">
-            <h6 className="font-bold">Featured Collections</h6>
+            <h6 className="font-bold">Best Sellers Collection</h6>
             <Link href={"#"}>Ver mais</Link>
           </div>
           <div className="p-5">
@@ -78,6 +82,8 @@ const SectionCollectionFeatured = () => {
                       alt={route.label}
                       label={route.label}
                       price={route.price}
+                      priceOffset={route.priceOffset}
+                      badgeDiscount={route.badgeDiscount}
                       category={route.category}
                       hrefCategory={route.hrefCategory}
                     />
@@ -94,4 +100,4 @@ const SectionCollectionFeatured = () => {
   );
 };
 
-export default SectionCollectionFeatured;
+export default SectionCollectionsBestSellers;

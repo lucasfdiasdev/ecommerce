@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
 import Autoplay from "embla-carousel-autoplay";
 
 import { GiPresent } from "react-icons/gi";
@@ -16,6 +15,8 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 import SectionCategories from "@/components/section/section-categories";
 import SectionCollectionFeatured from "@/components/section/section-collections-featured";
+import SectionCollectionsBestSellers from "@/components/section/section-collections-best-sellers";
+import SectionCollectionPopularProducts from "@/components/section/section-collection-popular-products";
 
 const HomePage = () => {
   return (
@@ -33,8 +34,8 @@ const HomePage = () => {
               <CarouselItem>
                 <div className="aspect-video overflow-hidden cursor-pointer ">
                   <Image
-                    width={320}
-                    height={320}
+                    width={780}
+                    height={780}
                     src={"/banner1.jpg"}
                     alt="banner 1"
                     className="h-full w-full object-cover object-center rounded-lg"
@@ -45,8 +46,8 @@ const HomePage = () => {
               <CarouselItem>
                 <div className="aspect-video overflow-hidden rounded-lg relative">
                   <Image
-                    width={320}
-                    height={320}
+                    width={780}
+                    height={780}
                     src={"/banner1.jpg"}
                     alt="banner 1"
                     className="h-full w-full object-cover object-center"
@@ -57,8 +58,8 @@ const HomePage = () => {
               <CarouselItem>
                 <div className="aspect-video overflow-hidden rounded-lg cursor-pointer">
                   <Image
-                    width={320}
-                    height={320}
+                    width={780}
+                    height={780}
                     src={"/banner1.jpg"}
                     alt="banner 1"
                     className="h-full w-full object-cover object-center"
@@ -68,43 +69,14 @@ const HomePage = () => {
             </CarouselContent>
           </Carousel>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-video overflow-hidden rounded-lg">
-              <Image
-                width={320}
-                height={320}
-                src={"/banner1.jpg"}
-                alt={"banner 1"}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg">
-              <Image
-                width={320}
-                height={320}
-                src={"/banner1.jpg"}
-                alt={"banner 1"}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg">
-              <Image
-                width={320}
-                height={320}
-                src={"/banner1.jpg"}
-                alt={"banner 1"}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg">
-              <Image
-                width={320}
-                height={320}
-                src={"/banner1.jpg"}
-                alt={"banner 1"}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
+          <div className="aspect-video overflow-hidden rounded-lg">
+            <Image
+              width={480}
+              height={480}
+              src={"/banner3.jpg"}
+              alt={"banner 1"}
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
       </MainLayout>
@@ -173,19 +145,15 @@ const HomePage = () => {
           </div>
           {/* categories */}
           <SectionCategories />
+          {/* best sellers collections */}
+          <SectionCollectionsBestSellers />
 
           {/* featured collections */}
           <SectionCollectionFeatured />
+          {/* our popular products */}
+          <SectionCollectionPopularProducts />
         </MainLayout>
       </section>
-      <MainLayout>
-        <section className="p-3 bg-black rounded-full">
-          <Marquee className="text-white" pauseOnHover>
-            I can be a React component, multiple React components, or just some
-            text.
-          </Marquee>
-        </section>
-      </MainLayout>
     </>
   );
 };
