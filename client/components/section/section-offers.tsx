@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Card, CardContent } from "../ui/card";
 
 const SectionOffers = () => {
   return (
@@ -9,35 +10,41 @@ const SectionOffers = () => {
         <Link href={"#"}>Ver mais</Link>
       </div>
       <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-        <div className="relative h-[400px] md:h-[480px] w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 bg-black">
-          {/* <Image
-            width={480}
-            height={480}
-            src={"/banner1.jpg"}
-            alt={"banner"}
-            className="h-full w-full object-cover object-center"
-          /> */}
-        </div>
+        <Card>
+          <CardContent className="relative h-[380px] md:h-[400px] w-full overflow-hidden rounded-lg bg-black sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+            <Image
+              width={320}
+              height={320}
+              src={"/offers1.png"}
+              alt={"offer"}
+              className=" object-cover object-center"
+            />
+          </CardContent>
+        </Card>
 
-        <div className="relative h-[400px] md:h-[480px] w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 ">
-          <Image
-            width={480}
-            height={480}
-            src={"/banner2.jpg"}
-            alt={"banner"}
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
+        <Card>
+          <CardContent className="relative h-[380px] md:h-[400px] w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+            <Image
+              width={320}
+              height={320}
+              src={"/offers2.png"}
+              alt={"banner"}
+              className=" object-cover object-center"
+            />
+          </CardContent>
+        </Card>
 
-        <div className="relative h-[400px] md:h-[480px] w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
-          <Image
-            width={480}
-            height={480}
-            src={"/banner3.jpg"}
-            alt={"banner"}
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
+        <Card>
+          <CardContent className="relative h-[380px] md:h-[400px] w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+            <Image
+              width={320}
+              height={320}
+              src={"/offers1.png"}
+              alt={"banner"}
+              className=" object-cover object-center"
+            />
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
