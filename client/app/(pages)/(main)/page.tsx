@@ -13,9 +13,10 @@ import {
   CarouselContent,
 } from "@/components/ui/carousel";
 import MainLayout from "@/components/layout/main-layout";
+import SectionOffers from "@/components/section/section-offers";
 import SectionCategories from "@/components/section/section-categories";
-import SectionCollectionFeatured from "@/components/section/section-collections-featured";
-import SectionCollectionsBestSellers from "@/components/section/section-collections-best-sellers";
+import SectionCollectionFeatured from "@/components/section/section-collection-featured";
+import SectionCollectionBestSellers from "@/components/section/section-collection-best-sellers";
 import SectionCollectionPopularProducts from "@/components/section/section-collection-popular-products";
 
 const HomePage = () => {
@@ -145,13 +146,21 @@ const HomePage = () => {
           </div>
           {/* categories */}
           <SectionCategories />
+
           {/* best sellers collections */}
-          <SectionCollectionsBestSellers />
+          <SectionCollectionBestSellers />
 
           {/* featured collections */}
           <SectionCollectionFeatured />
+
           {/* our popular products */}
           <SectionCollectionPopularProducts />
+        </MainLayout>
+      </section>
+
+      <section>
+        <MainLayout>
+          <SectionOffers />
         </MainLayout>
       </section>
     </>

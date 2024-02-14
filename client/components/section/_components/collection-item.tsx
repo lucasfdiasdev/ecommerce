@@ -40,7 +40,7 @@ const CollectionItem: React.FC<CollectionItemProps> = ({
   badgeDiscount,
 }) => {
   return (
-    <Card className="group max-w-[320px] md:max-w-[280px] h-[420px]">
+    <Card className="group h-[400px]">
       <CardHeader className="relative">
         {badgeDiscount && (
           <Badge className="max-w-fit absolute left-5 top-5">
@@ -63,6 +63,7 @@ const CollectionItem: React.FC<CollectionItemProps> = ({
             <CiShoppingCart size={20} className="visually-hidden md:block" />
           </div>
         </div>
+        {/* img card */}
         <Link
           href={{ pathname: href }}
           className="flex items-center justify-center"
@@ -70,8 +71,8 @@ const CollectionItem: React.FC<CollectionItemProps> = ({
           <Image
             src={src}
             alt={alt}
-            width={200}
-            height={200}
+            width={140}
+            height={140}
             className="object-contain mt-5"
           />
         </Link>

@@ -3,58 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { categoriesCardRouter } from "@/lib/data";
 
 const SectionCategories = () => {
-  const categoriesCardRouter = [
-    {
-      label: "Notebooks & Computers",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category1.png",
-    },
-    {
-      label: "Smart Tv's",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category2.png",
-    },
-    {
-      label: "Smartwatches",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category3.png",
-    },
-    {
-      label: "Smartphones",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category4.png",
-    },
-    {
-      label: "Headphones",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category5.png",
-    },
-    {
-      label: "Boomboxes",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category6.png",
-    },
-    {
-      label: "Gaming & Consoles",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category7.png",
-    },
-    {
-      label: "Books & Films",
-      itemsQuantity: 16,
-      href: "/",
-      src: "/category8.png",
-    },
-  ];
   return (
     <div className="row p-5 border shadow-md rounded-md bg-white">
       <Marquee pauseOnHover>
