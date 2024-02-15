@@ -45,14 +45,6 @@ export const featuredRoutes = [
     hrefCategory: "/category",
     src: "/category6.png",
   },
-  {
-    label: "JBL, Caixa de Som, Boombox 3, Bluetooth - Preta",
-    price: 899,
-    href: "/",
-    category: "Boomboxes",
-    hrefCategory: "/category",
-    src: "/category6.png",
-  },
 ];
 
 export const categoriesCardRouter = [
@@ -103,5 +95,63 @@ export const categoriesCardRouter = [
     itemsQuantity: 16,
     href: "/",
     src: "/category8.png",
+  },
+];
+
+export const routesLinksNavigation = [
+  {
+    title: "Loja",
+    href: "/store",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+];
+
+export const routerTag = [
+  {
+    label: "Headphones",
+    href: "#",
+  },
+  {
+    label: "Laptop",
+    href: "#",
+  },
+  {
+    label: "Mobile",
+    href: "#",
+  },
+  {
+    label: "Speaker",
+    href: "#",
+  },
+  {
+    label: "Tablet",
+    href: "#",
+  },
+  {
+    label: "Wire",
+    href: "#",
+  },
+];
+
+export const routerRandomProduct = [
+  {
+    label: "TCL QLED TV 55” C645 4K UHD GOOGLE TV DOLBY VISION GAMING",
+    src: "/category1.png",
+    href: "/",
+    price: 899,
+  },
+  {
+    label:
+      "Smart Watch AMOLED Display com 2 bandas(Metal+Gomma) 60 Days Ultra-Long Battery Life (Call Receive/Dial) 70 Modes Sports 5ATM/IP69K Waterproof Smartwatches for Android iPhone",
+    src: "/category3.png",
+    href: "/",
+    price: 899,
   },
 ];

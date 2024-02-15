@@ -3,18 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { FaRegHeart } from "react-icons/fa6";
-import {
-  FaEye,
-  FaStar,
-  FaRegStar,
-  FaShareAlt,
-  FaStarHalfAlt,
-} from "react-icons/fa";
+import { BsEye } from "react-icons/bs";
+import { CiHeart, CiShare2, CiShoppingCart } from "react-icons/ci";
+import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { CiShoppingCart } from "react-icons/ci";
 
 interface CollectionItemProps {
   src: string;
@@ -47,19 +41,16 @@ const CollectionItem: React.FC<CollectionItemProps> = ({
             {badgeDiscount}
           </Badge>
         )}
-        <FaRegHeart
-          size={20}
-          className="absolute right-5 top-4 cursor-pointer"
-        />
+        <CiHeart size={22} className="absolute right-5 top-4 cursor-pointer" />
         {/* actionsBar */}
         <div className="absolute transform transition-transform translate-x-full group-hover:translate-x-0 opacity-0 group-hover:opacity-100 flex flex-col right-3 top-10">
-          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer">
-            <FaShareAlt size={20} className="visually-hidden md:block" />
+          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer transition-all duration-300">
+            <CiShare2 size={20} className="visually-hidden md:block" />
           </div>
-          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer">
-            <FaEye size={20} className="visually-hidden md:block" />
+          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer transition-all duration-300">
+            <BsEye size={20} className="visually-hidden md:block" />
           </div>
-          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer">
+          <div className="p-2 hover:bg-orange-500 rounded-full cursor-pointer transition-all duration-300">
             <CiShoppingCart size={20} className="visually-hidden md:block" />
           </div>
         </div>

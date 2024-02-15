@@ -1,5 +1,6 @@
 "use client";
 
+import { routesLinksNavigation } from "@/lib/data";
 import {
   NavigationMenu,
   NavigationMenuLink,
@@ -8,7 +9,6 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import Link from "next/link";
 
 const HeaderNavigation = () => {
   const routes = [
@@ -166,21 +166,6 @@ const HeaderNavigation = () => {
     },
   ];
 
-  const routesLink = [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
-  ];
-
   return (
     <NavigationMenu className="-ml-4">
       <NavigationMenuList>
@@ -209,12 +194,8 @@ const HeaderNavigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="text-md flex flex-row items-center gap-8">
-          {routesLink.map((route) => (
-            <NavigationMenuLink
-              className=""
-              key={route.title}
-              href={route.href}
-            >
+          {routesLinksNavigation.map((route) => (
+            <NavigationMenuLink key={route.title} href={route.href}>
               {route.title}
             </NavigationMenuLink>
           ))}

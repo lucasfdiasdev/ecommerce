@@ -80,7 +80,7 @@
     @apply flex items-center justify-between;
   }
   .row {
-    @apply flex items-center;
+    @apply flex items-center flex-row;
   }
   .btn-dark {
     @apply py-1.5 px-4 bg-black hover:bg-black/90 transform duration-200 transition-all text-white rounded-full text-nowrap;
@@ -122,4 +122,11 @@
   justify-content: center;
   padding: 8px !important;
   color: gray !important;
+}
+
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
 }
