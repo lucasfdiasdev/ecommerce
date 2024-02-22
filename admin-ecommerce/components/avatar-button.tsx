@@ -1,12 +1,15 @@
-import React from "react";
-import { Avatar } from "./ui/avatar";
-import { AvatarImage } from "@radix-ui/react-avatar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 const AvatarButton = () => {
   return (
-    <Avatar>
-      <AvatarImage src="/user.jpg" />
-    </Avatar>
+    <div className="flex items-center gap-2">
+      <Avatar className="border-2">
+        <AvatarImage src="/user.jpg" />
+      </Avatar>
+      <p className="text-sm font-bold hidden md:block">
+        lucasferndias@gmail.com
+      </p>
+    </div>
   );
 };
 

@@ -55,7 +55,7 @@ export const sidebarRoutes = [
   {
     label: "Ordens",
     icon: FaClipboardList,
-    href: "#",
+    href: "/admin/orders",
     color: "text-sky-500",
     chevronIconLeft: MdChevronLeft,
     chevronIconDown: HiChevronDown,
@@ -89,7 +89,7 @@ export const sidebarRoutes = [
   {
     label: "Blog",
     icon: GrBlog,
-    href: "/admin",
+    href: "/admin/blog",
     color: "text-sky-500",
     chevronIconLeft: MdChevronLeft,
     chevronIconDown: HiChevronDown,
