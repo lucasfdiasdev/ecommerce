@@ -5,6 +5,8 @@ import { FaClipboardList } from "react-icons/fa";
 import { GrBlog, GrCatalog } from "react-icons/gr";
 import { LayoutDashboard, LogOut, User2 } from "lucide-react";
 
+import { formatter } from "./utils";
+
 export const sidebarRoutes = [
   {
     label: "Dashboard",
@@ -119,5 +121,15 @@ export const sidebarRoutes = [
     icon: LogOut,
     href: "#",
     color: "text-sky-500",
+  },
+];
+
+export const orders = [
+  {
+    id: 1,
+    status: "Pending",
+    costumer: "Giordano Alberes",
+    createdAt: "2021-01-01",
+    totalPrice: formatter.format(100),
   },
 ];
