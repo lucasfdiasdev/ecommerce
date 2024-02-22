@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { format } from "date-fns";
 import {
   FaArrowTrendDown,
   FaArrowTrendUp,
@@ -9,10 +8,10 @@ import {
 } from "react-icons/fa6";
 
 import { Column } from "@ant-design/plots";
-import { OrderClient } from "./_components/client";
-import { OrderColumn } from "./_components/columns";
 
 import { orders } from "@/lib/data";
+import { OrderClient } from "@/components/home/recent-orders/client";
+import { OrderColumn } from "@/components/home/recent-orders/columns";
 
 const HomePage = () => {
   const data = [
@@ -104,7 +103,7 @@ const HomePage = () => {
   }));
 
   return (
-    <div className="p-2 md:p-5">
+    <>
       <h3 className="text-xl md:text-3xl font-bold mb-4">Dashboard</h3>
       <div className="flex items-center justify-between gap-4">
         <Card className="w-full">
@@ -187,9 +186,8 @@ const HomePage = () => {
       <div className="mt-4">
         <Card className="w-full">
           <CardHeader>
-            <CardTitle className="flex items-center justify-between text-sm text-muted-foreground font-normal">
+            <CardTitle className="text-sm text-muted-foreground font-normal">
               <span>Recent Orders</span>
-              <FaBrazilianRealSign />
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -197,7 +195,7 @@ const HomePage = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </>
   );
 };
 

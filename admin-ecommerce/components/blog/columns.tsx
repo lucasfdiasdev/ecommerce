@@ -2,15 +2,15 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 
-export type OrderColumn = {
+export type BlogColumn = {
   id: string;
   totalPrice: string;
   createdAt: string;
-  status: "Pending" | "Completed" | "Canceled" | "Hold";
+  status: string;
   costumer: string;
 };
 
-export const columns: ColumnDef<OrderColumn>[] = [
+export const columns: ColumnDef<BlogColumn>[] = [
   {
     accessorKey: "id",
     header: "Id",

@@ -55,43 +55,9 @@ export const sidebarRoutes = [
     ],
   },
   {
-    label: "Ordens",
-    icon: FaClipboardList,
-    href: "/admin/orders",
-    color: "text-sky-500",
-    chevronIconLeft: MdChevronLeft,
-    chevronIconDown: HiChevronDown,
-    list: [
-      {
-        label: "Add Produto",
-        href: "/admin/add-product",
-      },
-      {
-        label: "Lista Produtos",
-        href: "/admin/list-products",
-      },
-      {
-        label: "Marca",
-        href: "/admin/brand",
-      },
-      {
-        label: "Lista Marca",
-        href: "/admin/list-brand",
-      },
-      {
-        label: "Categoria",
-        href: "/admin/category",
-      },
-      {
-        label: "Lista Categoria",
-        href: "/admin/list-category",
-      },
-    ],
-  },
-  {
     label: "Blog",
     icon: GrBlog,
-    href: "/admin/blog",
+    href: "#",
     color: "text-sky-500",
     chevronIconLeft: MdChevronLeft,
     chevronIconDown: HiChevronDown,
@@ -101,19 +67,29 @@ export const sidebarRoutes = [
         href: "/admin/add-blog",
       },
       {
+        label: "Blog Lista",
+        href: "/admin/blog-list",
+      },
+      {
         label: "Blog Categoria",
         href: "/admin/add-blog-category",
       },
       {
         label: "Blog Categoria Lista",
-        href: "/admin/blog-category-list",
+        href: "/admin/blog-cat-list",
       },
     ],
   },
   {
+    label: "Orders",
+    icon: FaClipboardList,
+    href: "/admin/orders",
+    color: "text-sky-500",
+  },
+  {
     label: "Perguntas",
     icon: BiConversation,
-    href: "#",
+    href: "/admin/enquires",
     color: "text-sky-500",
   },
   {
@@ -125,6 +101,36 @@ export const sidebarRoutes = [
 ];
 
 export const orders = [
+  {
+    id: 1,
+    status: "Pending",
+    costumer: "Giordano Alberes",
+    createdAt: "2021-01-01",
+    totalPrice: formatter.format(100),
+  },
+];
+
+export const enquires = [
+  {
+    id: 1,
+    status: "Pending",
+    costumer: "Giordano Alberes",
+    createdAt: "2021-01-01",
+    totalPrice: formatter.format(100),
+  },
+];
+
+export const blog = [
+  {
+    id: 1,
+    status: "Pending",
+    costumer: "Giordano Alberes",
+    createdAt: "2021-01-01",
+    totalPrice: formatter.format(100),
+  },
+];
+
+export const blogCategory = [
   {
     id: 1,
     status: "Pending",

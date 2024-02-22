@@ -6,7 +6,7 @@ import MobileSidebar from "./mobile-sidebar";
 
 const Header = () => {
   return (
-    <div className="flex items-center p-4">
+    <div className="flex items-center py-4 px-2 md:px-4">
       <MobileSidebar />
       <div className="flex w-full items-center justify-end gap-8">
         <button className="relative">

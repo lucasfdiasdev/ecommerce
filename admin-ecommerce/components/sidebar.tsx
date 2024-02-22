@@ -24,7 +24,7 @@ const Sidebar = () => {
         <Logo />
         <div className="space-y-1">
           {sidebarRoutes.map((route, index) => (
-            <div key={index} className="">
+            <Link href={route.href} key={index}>
               <button
                 onClick={() => handleToggleRoute(index)}
                 className={cn(
@@ -34,10 +34,10 @@ const Sidebar = () => {
                     : "text-zinc-400"
                 )}
               >
-                <Link href={route.href} className="flex items-center">
+                <div className="flex items-center">
                   <route.icon className={cn("h-5 w-5 mr-3", route.color)} />
                   {route.label}
-                </Link>
+                </div>
                 {route.chevronIconLeft && (
                   <span className="ml-2">
                     {openRouteIndex === index ? (
@@ -66,7 +66,7 @@ const Sidebar = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </Link>
           ))}
         </div>
       </div>

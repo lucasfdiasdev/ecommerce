@@ -10,7 +10,7 @@ interface OrderClientProps {
 export const OrderClient: React.FC<OrderClientProps> = ({ data }) => {
   return (
     <>
-      <DataTable searchKey="costumer" columns={columns} data={data} />
+      <DataTable searchKey="Cliente" columns={columns} data={data} />
     </>
   );
 };
